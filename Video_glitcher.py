@@ -8,6 +8,9 @@ from tqdm import tqdm
 from moviepy.editor import VideoFileClip
 from scipy import signal
 
+# This code is just a mess. Some functions probably will never be used, some are completely unnecessary. 
+# Dealing with the data in YUV format is quite inefficient/difficult to deal with. Keeping this here anyway.
+
 def run_ffmpeg_command(command):
     try:
         subprocess.run(command, shell=True, check=True)
